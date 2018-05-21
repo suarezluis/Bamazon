@@ -1,29 +1,29 @@
-//                                             o8o                       .o o.   
-//                                             `"'                      .8' `8.  
-//  oooo d8b  .ooooo.   .ooooo oo oooo  oooo  oooo  oooo d8b  .ooooo.  .8'   `8. 
-//  `888""8P d88' `88b d88' `888  `888  `888  `888  `888""8P d88' `88b 88     88 
-//   888     888ooo888 888   888   888   888   888   888     888ooo888 88     88 
-//   888     888    .o 888   888   888   888   888   888     888    .o `8.   .8' 
-//  d888b    `Y8bod8P' `V8bod888   `V88V"V8P' o888o d888b    `Y8bod8P'  `8. .8'  
-//                           888.                                        `" "'   
-//                           8P'                                                 
-//                           "                                                   
+//                                             o8o                       .o o.
+//                                             `"'                      .8' `8.
+//  oooo d8b  .ooooo.   .ooooo oo oooo  oooo  oooo  oooo d8b  .ooooo.  .8'   `8.
+//  `888""8P d88' `88b d88' `888  `888  `888  `888  `888""8P d88' `88b 88     88
+//   888     888ooo888 888   888   888   888   888   888     888ooo888 88     88
+//   888     888    .o 888   888   888   888   888   888     888    .o `8.   .8'
+//  d888b    `Y8bod8P' `V8bod888   `V88V"V8P' o888o d888b    `Y8bod8P'  `8. .8'
+//                           888.                                        `" "'
+//                           8P'
+//                           "
 
 var inquirer = require("inquirer");
 var mysql = require("mysql");
 var Table = require("cli-table");
 var colors = require("colors");
 
-//                                          
-//                                          
-//  oooo    ooo  .oooo.   oooo d8b  .oooo.o 
-//   `88.  .8'  `P  )88b  `888""8P d88(  "8 
-//    `88..8'    .oP"888   888     `"Y88b.  
-//     `888'    d8(  888   888     o.  )88b 
-//      `8'     `Y888""8o d888b    8""888P' 
-//                                          
-//                                          
-//   
+//
+//
+//  oooo    ooo  .oooo.   oooo d8b  .oooo.o
+//   `88.  .8'  `P  )88b  `888""8P d88(  "8
+//    `88..8'    .oP"888   888     `"Y88b.
+//     `888'    d8(  888   888     o.  )88b
+//      `8'     `Y888""8o d888b    8""888P'
+//
+//
+//
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -40,16 +40,16 @@ connection.connect(function(err) {
   main();
 });
 
-//                               o8o                .o o.   
-//                               `"'               .8' `8.  
-//  ooo. .oo.  .oo.    .oooo.   oooo  ooo. .oo.   .8'   `8. 
-//  `888P"Y88bP"Y88b  `P  )88b  `888  `888P"Y88b  88     88 
-//   888   888   888   .oP"888   888   888   888  88     88 
-//   888   888   888  d8(  888   888   888   888  `8.   .8' 
-//  o888o o888o o888o `Y888""8o o888o o888o o888o  `8. .8'  
-//                                                  `" "'   
-//                                                          
-// 
+//                               o8o                .o o.
+//                               `"'               .8' `8.
+//  ooo. .oo.  .oo.    .oooo.   oooo  ooo. .oo.   .8'   `8.
+//  `888P"Y88bP"Y88b  `P  )88b  `888  `888P"Y88b  88     88
+//   888   888   888   .oP"888   888   888   888  88     88
+//   888   888   888  d8(  888   888   888   888  `8.   .8'
+//  o888o o888o o888o `Y888""8o o888o o888o o888o  `8. .8'
+//                                                  `" "'
+//
+//
 
 function main() {
   console.clear();
@@ -67,20 +67,20 @@ function main() {
   );
   console.log("");
   createTable();
-  
+
   //connection.end();
 }
 
-//                                             .             ooooooooooooo            .o8       oooo              .o o.   
-//                                           .o8             8'   888   `8           "888       `888             .8' `8.  
-//   .ooooo.  oooo d8b  .ooooo.   .oooo.   .o888oo  .ooooo.       888       .oooo.    888oooo.   888   .ooooo.  .8'   `8. 
-//  d88' `"Y8 `888""8P d88' `88b `P  )88b    888   d88' `88b      888      `P  )88b   d88' `88b  888  d88' `88b 88     88 
-//  888        888     888ooo888  .oP"888    888   888ooo888      888       .oP"888   888   888  888  888ooo888 88     88 
-//  888   .o8  888     888    .o d8(  888    888 . 888    .o      888      d8(  888   888   888  888  888    .o `8.   .8' 
-//  `Y8bod8P' d888b    `Y8bod8P' `Y888""8o   "888" `Y8bod8P'     o888o     `Y888""8o  `Y8bod8P' o888o `Y8bod8P'  `8. .8'  
-//                                                                                                                `" "'   
-//                                                                                                                        
-//                                                                                                                        
+//                                             .             ooooooooooooo            .o8       oooo              .o o.
+//                                           .o8             8'   888   `8           "888       `888             .8' `8.
+//   .ooooo.  oooo d8b  .ooooo.   .oooo.   .o888oo  .ooooo.       888       .oooo.    888oooo.   888   .ooooo.  .8'   `8.
+//  d88' `"Y8 `888""8P d88' `88b `P  )88b    888   d88' `88b      888      `P  )88b   d88' `88b  888  d88' `88b 88     88
+//  888        888     888ooo888  .oP"888    888   888ooo888      888       .oP"888   888   888  888  888ooo888 88     88
+//  888   .o8  888     888    .o d8(  888    888 . 888    .o      888      d8(  888   888   888  888  888    .o `8.   .8'
+//  `Y8bod8P' d888b    `Y8bod8P' `Y888""8o   "888" `Y8bod8P'     o888o     `Y888""8o  `Y8bod8P' o888o `Y8bod8P'  `8. .8'
+//                                                                                                                `" "'
+//
+//
 
 function createTable() {
   var table = new Table({
@@ -123,53 +123,50 @@ function createTable() {
     console.log(table.toString() + "\n");
     askCostumer();
   });
-  
 }
 
-//                     oooo          .oooooo.                          .                                                      .o o.   
-//                     `888         d8P'  `Y8b                       .o8                                                     .8' `8.  
-//   .oooo.    .oooo.o  888  oooo  888           .ooooo.   .oooo.o .o888oo oooo  oooo  ooo. .oo.  .oo.    .ooooo.  oooo d8b .8'   `8. 
-//  `P  )88b  d88(  "8  888 .8P'   888          d88' `88b d88(  "8   888   `888  `888  `888P"Y88bP"Y88b  d88' `88b `888""8P 88     88 
-//   .oP"888  `"Y88b.   888888.    888          888   888 `"Y88b.    888    888   888   888   888   888  888ooo888  888     88     88 
-//  d8(  888  o.  )88b  888 `88b.  `88b    ooo  888   888 o.  )88b   888 .  888   888   888   888   888  888    .o  888     `8.   .8' 
-//  `Y888""8o 8""888P' o888o o888o  `Y8bood8P'  `Y8bod8P' 8""888P'   "888"  `V88V"V8P' o888o o888o o888o `Y8bod8P' d888b     `8. .8'  
-//                                                                                                                            `" "'   
-//                                                                                                                                    
-//                                                                                                                                    
+//                     oooo          .oooooo.                          .                                                      .o o.
+//                     `888         d8P'  `Y8b                       .o8                                                     .8' `8.
+//   .oooo.    .oooo.o  888  oooo  888           .ooooo.   .oooo.o .o888oo oooo  oooo  ooo. .oo.  .oo.    .ooooo.  oooo d8b .8'   `8.
+//  `P  )88b  d88(  "8  888 .8P'   888          d88' `88b d88(  "8   888   `888  `888  `888P"Y88bP"Y88b  d88' `88b `888""8P 88     88
+//   .oP"888  `"Y88b.   888888.    888          888   888 `"Y88b.    888    888   888   888   888   888  888ooo888  888     88     88
+//  d8(  888  o.  )88b  888 `88b.  `88b    ooo  888   888 o.  )88b   888 .  888   888   888   888   888  888    .o  888     `8.   .8'
+//  `Y888""8o 8""888P' o888o o888o  `Y8bood8P'  `Y8bod8P' 8""888P'   "888"  `V88V"V8P' o888o o888o o888o `Y8bod8P' d888b     `8. .8'
+//                                                                                                                            `" "'
+//
+//
 
 function askCostumer() {
-  
-    inquirer
-      .prompt([
-        {
-          name: "item",
-          type: "input",
-          message: "       Please enter the ID of the product you would you like to buy?"
-            .red
-        },
-        {
-          name: "number",
-          type: "input",
-          message: "       How many units would you like to purchase?".magenta
-        }
-      ])
-      .then(function(answer) {
-        if (checkAvailable(answer.item, answer.number)) {
-        }
-      });
-  
+  inquirer
+    .prompt([
+      {
+        name: "item",
+        type: "input",
+        message: "       Please enter the ID of the product you would you like to buy?"
+          .red
+      },
+      {
+        name: "number",
+        type: "input",
+        message: "       How many units would you like to purchase?".magenta
+      }
+    ])
+    .then(function(answer) {
+      if (checkAvailable(answer.item, answer.number)) {
+      }
+    });
 }
 
-//            oooo                            oooo              .o.                              o8o  oooo             .o8       oooo              .o o.   
-//            `888                            `888             .888.                             `"'  `888            "888       `888             .8' `8.  
-//   .ooooo.   888 .oo.    .ooooo.   .ooooo.   888  oooo      .8"888.     oooo    ooo  .oooo.   oooo   888   .oooo.    888oooo.   888   .ooooo.  .8'   `8. 
-//  d88' `"Y8  888P"Y88b  d88' `88b d88' `"Y8  888 .8P'      .8' `888.     `88.  .8'  `P  )88b  `888   888  `P  )88b   d88' `88b  888  d88' `88b 88     88 
-//  888        888   888  888ooo888 888        888888.      .88ooo8888.     `88..8'    .oP"888   888   888   .oP"888   888   888  888  888ooo888 88     88 
-//  888   .o8  888   888  888    .o 888   .o8  888 `88b.   .8'     `888.     `888'    d8(  888   888   888  d8(  888   888   888  888  888    .o `8.   .8' 
-//  `Y8bod8P' o888o o888o `Y8bod8P' `Y8bod8P' o888o o888o o88o     o8888o     `8'     `Y888""8o o888o o888o `Y888""8o  `Y8bod8P' o888o `Y8bod8P'  `8. .8'  
-//                                                                                                                                                 `" "'   
-//                                                                                                                                                         
-//                                                                                                                                                         
+//            oooo                            oooo              .o.                              o8o  oooo             .o8       oooo              .o o.
+//            `888                            `888             .888.                             `"'  `888            "888       `888             .8' `8.
+//   .ooooo.   888 .oo.    .ooooo.   .ooooo.   888  oooo      .8"888.     oooo    ooo  .oooo.   oooo   888   .oooo.    888oooo.   888   .ooooo.  .8'   `8.
+//  d88' `"Y8  888P"Y88b  d88' `88b d88' `"Y8  888 .8P'      .8' `888.     `88.  .8'  `P  )88b  `888   888  `P  )88b   d88' `88b  888  d88' `88b 88     88
+//  888        888   888  888ooo888 888        888888.      .88ooo8888.     `88..8'    .oP"888   888   888   .oP"888   888   888  888  888ooo888 88     88
+//  888   .o8  888   888  888    .o 888   .o8  888 `88b.   .8'     `888.     `888'    d8(  888   888   888  d8(  888   888   888  888  888    .o `8.   .8'
+//  `Y8bod8P' o888o o888o `Y8bod8P' `Y8bod8P' o888o o888o o88o     o8888o     `8'     `Y888""8o o888o o888o `Y888""8o  `Y8bod8P' o888o `Y8bod8P'  `8. .8'
+//                                                                                                                                                 `" "'
+//
+//
 
 function checkAvailable(item, number) {
   connection.query(
@@ -202,23 +199,23 @@ function checkAvailable(item, number) {
         );
         console.log("");
       }
-      angain();
+      again();
     }
   );
 }
 
-//                                              o8o                .o o.   
-//                                              `"'               .8' `8.  
-//   .oooo.   ooo. .oo.    .oooooooo  .oooo.   oooo  ooo. .oo.   .8'   `8. 
-//  `P  )88b  `888P"Y88b  888' `88b  `P  )88b  `888  `888P"Y88b  88     88 
-//   .oP"888   888   888  888   888   .oP"888   888   888   888  88     88 
-//  d8(  888   888   888  `88bod8P'  d8(  888   888   888   888  `8.   .8' 
-//  `Y888""8o o888o o888o `8oooooo.  `Y888""8o o888o o888o o888o  `8. .8'  
-//                        d"     YD                                `" "'   
-//                        "Y88888P'                                        
-//    
+//                                  o8o                .o o.
+//                                  `"'               .8' `8.
+//   .oooo.    .oooooooo  .oooo.   oooo  ooo. .oo.   .8'   `8.
+//  `P  )88b  888' `88b  `P  )88b  `888  `888P"Y88b  88     88
+//   .oP"888  888   888   .oP"888   888   888   888  88     88
+//  d8(  888  `88bod8P'  d8(  888   888   888   888  `8.   .8'
+//  `Y888""8o `8oooooo.  `Y888""8o o888o o888o o888o  `8. .8'
+//            d"     YD                                `" "'
+//            "Y88888P'
+//
 
-function angain() {
+function again() {
   inquirer
     .prompt({
       name: "again",

@@ -30,5 +30,7 @@ INSERT INTO products (product_name, department_name, price, stock_quantity) VALU
 INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('SkyZone SKY03 3D', 'Goggles', 479, 5);
 INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('BushMule', 'Aircraft', 183.42, 2);
 INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('TBS Vendetta 2', 'Aircraft', 499.99, 13);
+INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('3S 22000mah', 'Batteries', 18.95, 35);
+INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('4S 22000mah', 'Batteries', 21.82, 4);
 
 
