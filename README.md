@@ -11,11 +11,11 @@ Homework for the Coding Boot Camp at University of Texas in Austin ![enter image
  - Node.js
  - MySQL
 
- -**Modules**
- -- NPM Colors
- - NPM Inquirer
- - NPM Cli-Table
- - NPM MySQL
+ **Modules**
+ * NPM Colors
+ * NPM Inquirer
+ * NPM Cli-Table
+ * NPM MySQL
 
 **Customer.-** Ability to view and purchase products with ID number.
 **Manager.-** Ability to view products, low inventory, add inventory and add new products.
