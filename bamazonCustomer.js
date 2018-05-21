@@ -11,7 +11,6 @@
 
 var inquirer = require("inquirer");
 var mysql = require("mysql");
-
 var Table = require("cli-table");
 var colors = require("colors");
 
@@ -34,15 +33,12 @@ var connection = mysql.createConnection({
   database: "bamazon_db"
 });
 
-var ticket = "001";
+var ticket;
 connection.connect(function(err) {
   if (err) throw err;
   ticket = connection.threadId;
-});
-
-setTimeout(() => {
   main();
-}, 20);
+});
 
 //                               o8o                .o o.   
 //                               `"'               .8' `8.  
@@ -71,7 +67,7 @@ function main() {
   );
   console.log("");
   createTable();
-  askCostumer();
+  
   //connection.end();
 }
 
@@ -124,8 +120,10 @@ function createTable() {
         (res[i].stock_quantity + "").magenta
       ]);
     }
-    return console.log(table.toString() + "\n");
+    console.log(table.toString() + "\n");
+    askCostumer();
   });
+  
 }
 
 //                     oooo          .oooooo.                          .                                                      .o o.   
@@ -140,7 +138,7 @@ function createTable() {
 //                                                                                                                                    
 
 function askCostumer() {
-  setTimeout(() => {
+  
     inquirer
       .prompt([
         {
@@ -159,7 +157,7 @@ function askCostumer() {
         if (checkAvailable(answer.item, answer.number)) {
         }
       });
-  }, 20);
+  
 }
 
 //            oooo                            oooo              .o.                              o8o  oooo             .o8       oooo              .o o.   
