@@ -6,13 +6,13 @@ Amazon-like storefront with MySQL and Node.js
 **Amazon, Store - Command Line Application**
 Homework for the Coding Boot Camp at University of Texas in Austin ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/225px-Texas_Longhorns_logo.svg.png)
 
-Technologies implemented:
+**Technologies implemented:**
  - JavaSript
  - Node.js
  - MySQL
 
- Modules
- - NPM Colors
+ -**Modules**
+ -- NPM Colors
  - NPM Inquirer
  - NPM Cli-Table
  - NPM MySQL
