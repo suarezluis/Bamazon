@@ -21,5 +21,5 @@ Homework for the Coding Boot Camp at University of Texas in Austin
 ***Manager.-*** Ability to view products, low inventory, add inventory and add new products.
 ***Supervisor.-*** Ability to create new department, modify tables and visualize sales
 
-/////// VIDEO GOES HERE ////////
+![Example](https://suarezluis.github.io/Bamazon/bamazon.gif)
 
