@@ -198,11 +198,15 @@ function askSupervisor() {
             "INSERT INTO departments (department_name, over_head_cost) VALUES (?, ? )",
             [answer.name, answer.over],
             function(err, res) {
-              showDepartments();
+              header();
+                showDepartments();
             }
           );
+            
+              
           setTimeout(() => {
-              again()
+            
+            again()
           }, 20);
       })
       }
