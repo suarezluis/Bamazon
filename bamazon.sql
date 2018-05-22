@@ -17,6 +17,7 @@ CREATE TABLE products (
 
   price FLOAT(10) NOT NULL,
   stock_quantity INTEGER(10) NOT NULL,
+  product_sales FLOAT(10) DEFAULT 0,
   PRIMARY KEY (item_id)
 );
 
@@ -34,3 +35,22 @@ INSERT INTO products (product_name, department_name, price, stock_quantity) VALU
 INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES ('4S 22000mah', 'Batteries', 21.82, 4);
 
 
+USE bamazon_db;
+CREATE TABLE departments (
+
+  department_id INTEGER(10) AUTO_INCREMENT,
+
+  department_name VARCHAR(30) NOT NULL,
+
+  over_head_cost VARCHAR(30) NOT NULL,
+
+  
+  PRIMARY KEY (department_id)
+);
+
+INSERT INTO departments (department_name, over_head_cost) VALUES ("Transmitters", 2000 );
+INSERT INTO departments (department_name, over_head_cost) VALUES ("Cameras", 800 );
+INSERT INTO departments (department_name, over_head_cost) VALUES ("VTX", 500 );
+INSERT INTO departments (department_name, over_head_cost) VALUES ("Goggles", 1000 );
+INSERT INTO departments (department_name, over_head_cost) VALUES ("Aircraft", 1200 );
+INSERT INTO departments (department_name, over_head_cost) VALUES ("Batteries", 400 );

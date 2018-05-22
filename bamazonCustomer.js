@@ -188,6 +188,15 @@ function checkAvailable(item, number) {
             if (err) throw err;
           }
         );
+
+        connection.query(
+          "UPDATE bamazon_db.products SET product_sales='?' WHERE item_id=?;",
+          [parseFloat(res[0].product_sales)+(Math.round(parseFloat(res[0].price) * number * 100) / 100), item],
+          function(err, res) {
+            if (err) throw err;
+          }
+        );
+
         console.log(
           "\n              Thanks for your order of ".yellow +
             number +
